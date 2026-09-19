@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post It</title>
+    <!-- Link to the CSS file located in the css folder -->
+    <link rel="stylesheet" href="css/postit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Post It!</h1>
+        
+        <!-- Form to capture the user's name (1 user at a time) -->
+        <div id="userForm">
+            <label for="username">Enter your name:</label>
+            <input type="text" id="username" required>
+            <button id="submitUser">Submit</button>
+        </div>
+
+        <!-- Section hidden until the user submits their name -->
+        <div id="postSection" style="display:none;">
+            <textarea id="postInput" placeholder="Write your caption here..." required></textarea>
+            <button id="postButton">Post</button>
+        </div>
+
+        <!-- Container where the post thread will appear -->
+        <div id="postThread"></div>
+    </div>
+
+    <!-- Link to the JavaScript file located in the js folder -->
+    <script src="js/postit.js"></script>
+</body>
+</html>
